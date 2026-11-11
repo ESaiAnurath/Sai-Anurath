@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- EDIT 1: your name -->
+<title>Your Name | Portfolio</title>
+<style>
+  :root { --bg: #f7f8fa; --card: #ffffff; --ink: #1d2433; --muted: #5b6475; --accent: #0f766e; --line: #e3e7ee; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #11151c; --card: #1a2029; --ink: #e8ecf2; --muted: #a3acba; --accent: #2dd4bf; --line: #2a323e; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 48px 16px 64px; }
+  header h1 { font-size: 2.4rem; line-height: 1.15; margin: 0 0 6px; }
+  .headline { font-size: 1.15rem; color: var(--accent); font-weight: 600; margin: 0 0 4px; }
+  .meta { color: var(--muted); margin: 0 0 18px; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; }
+  .links a { border: 1px solid var(--line); background: var(--card); color: var(--ink); padding: 7px 14px; border-radius: 999px; text-decoration: none; font-size: .95rem; }
+  .links a:hover { border-color: var(--accent); color: var(--accent); }
+  h2 { font-size: 1.05rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 44px 0 14px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; list-style: none; }
+  .chips li { background: var(--card); border: 1px solid var(--line); padding: 5px 12px; border-radius: 8px; font-size: .95rem; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px; margin-bottom: 14px; }
+  .card h3 { margin: 0 0 4px; font-size: 1.15rem; }
+  .card .stack { color: var(--accent); font-size: .9rem; font-weight: 600; margin: 0 0 10px; }
+  .card p { margin: 0 0 8px; }
+  .card a { color: var(--accent); font-weight: 600; }
+  ul.plain { margin: 0; padding-left: 20px; }
+  footer { margin-top: 56px; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+
+  <!-- EDIT 2: name, headline, college, links. Delete any link you don't have. -->
+  <header>
+    <h1>Your Name</h1>
+    <p class="headline">Cloud &amp; DevOps Enthusiast | AWS | Python</p>
+    <p class="meta">B.Tech CSE (2nd year), SR University, Warangal</p>
+    <nav class="links">
+      <a href="https://www.linkedin.com/in/your-linkedin-id">LinkedIn</a>
+      <a href="https://github.com/your-github-id">GitHub</a>
+      <a href="mailto:your.email@example.com">Email</a>
+      <a href="resume.pdf">Resume (PDF)</a>
+    </nav>
+  </header>
+
+  <!-- EDIT 3: 2–3 sentences about you, in your own words. What do you build? What are you looking for? -->
+  <section>
+    <h2>About</h2>
+    <p>I am a Computer Science student who likes building things that solve real problems. I am learning cloud computing on AWS
+      and I build small products end to end. I am looking for an internship in cloud, DevOps or software development.</p>
+  </section>
+
+  <!-- EDIT 4: only skills you can actually show or explain in an interview -->
+  <section>
+    <h2>Skills</h2>
+    <ul class="chips">
+      <li>Python</li><li>AWS Lambda</li><li>API Gateway</li><li>DynamoDB</li><li>Git &amp; GitHub</li><li>HTML/CSS</li><li>SQL</li>
+    </ul>
+  </section>
+
+  <!-- EDIT 5: your projects. Copy a whole <article> block for each one. Keep only projects YOU built. -->
+  <section>
+    <h2>Projects</h2>
+    <article class="card">
+      <h3>Cold-Chain Guardian: medicine fridge monitor</h3>
+      <p class="stack">IoT · AWS API Gateway · Lambda · DynamoDB · SNS</p>
+      <p>A serverless product that watches a pharmacy fridge and emails the owner when the temperature leaves the safe 2–8 °C range.
+        It sends one alert when the state changes, not hundreds. Built hands-on at AWS Product Workshop 1, SR University (Oct 2026).</p>
+      <a href="https://github.com/your-github-id/cold-chain-guardian">Code on GitHub →</a>
+    </article>
+    <article class="card">
+      <h3>Your Cloud Computing course product</h3>
+      <p class="stack">Technologies you used</p>
+      <p>The problem, who it helps, what you built, and one result (for example: "works on a real ESP32", "deployed on AWS").</p>
+      <a href="#">Demo / code →</a>
+    </article>
+  </section>
+
+  <!-- EDIT 6: certifications and badges (with links if you have them). Delete the section if empty. -->
+  <section>
+    <h2>Certifications</h2>
+    <ul class="plain">
+      <li>AWS Academy Cloud Foundations (example)</li>
+      <li>Google Cloud skill badge (example)</li>
+    </ul>
+  </section>
+
+  <!-- EDIT 7: hackathons, toppers, clubs, events. Delete the section if empty. -->
+  <section>
+    <h2>Achievements &amp; Activities</h2>
+    <ul class="plain">
+      <li>Member, Cloud Computing &amp; DevOps Club (CCDC), SR University</li>
+    </ul>
+  </section>
+
+  <footer>© 2026 Your Name</footer>
+</main>
+</body>
+</html>
